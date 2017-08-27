@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cab7a20c-bf3d-48b4-8b1d-73a5e27ad2da" name="tencent_virtual" url="http://123.207.68.28">
+        <fileTransfer host="123.207.68.28" port="22" rootFolder="/root/test1" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

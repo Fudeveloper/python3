@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="tencent">
+  <component name="PublishConfigData" serverName="tencent_virtual">
     <serverData>
       <paths name="lik">
         <serverdata>
@@ -16,7 +16,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="tencent_virtual">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
-    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
