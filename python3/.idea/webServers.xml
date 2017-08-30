@@ -10,6 +10,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="3e4f8013-b9c5-423a-9e4a-1b7407b8aa40" name="lik_virtual" url="http://192.168.17.133:8000">
+        <fileTransfer host="192.168.17.133" port="22" rootFolder="/root/1-django" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

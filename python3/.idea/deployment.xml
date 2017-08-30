@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="tencent_virtual">
+  <component name="PublishConfigData" serverName="lik_virtual">
     <serverData>
       <paths name="lik">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lik_virtual">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/1-django" web="/" />
           </mappings>
         </serverdata>
       </paths>
@@ -19,7 +26,7 @@
       <paths name="tencent_virtual">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/1-django" web="/" />
           </mappings>
         </serverdata>
       </paths>
