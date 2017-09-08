@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@123.207.68.28">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <table id="6" parent="2" name="student"/>
+    <table id="7" parent="2" name="t1"/>
+    <table id="8" parent="2" name="userinfos"/>
+    <column id="9" parent="6" name="sid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="10" parent="6" name="sname">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="11" parent="6" name="isdelete">
+      <Position>3</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="12" parent="6" name="gender">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+      <DefaultExpression>&apos;Male&apos;</DefaultExpression>
+    </column>
+    <key id="13" parent="6" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="14" parent="7" name="sid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="15" parent="7" name="sname">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="16" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="17" parent="8" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="18" parent="8" name="uname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="19" parent="8" name="upwd">
+      <Position>3</Position>
+      <DataType>char(40)|0</DataType>
+    </column>
+    <column id="20" parent="8" name="isdelete">
+      <Position>4</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="21" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
