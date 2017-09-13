@@ -15,10 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from booktest import views
+from booktest import view_login
 
 urlpatterns = [
-    url(r'^index$', views.index, name='index'),
-    url(r'^$', views.index, name='index'),
+    # url(r'^index$', view_login.index, name='index'),
+    url(r'^$', view_login.index, name='index'),
+
+
+    url(r'^login_handler/$', view_login.login_handler, name='login_handler'),
+    url(r'^login/$', view_login.login, name='login'),
+    url(r'^logout/$', view_login.logout, name='logout'),
+
+
     url(r'^test/$', views.test, name='test'),
     url(r'^get_test1/$', views.get_test1, name='get_test1'),
     url(r'^get_test2/$', views.get_test2, name='get_test2'),
@@ -26,5 +34,6 @@ urlpatterns = [
     url(r'^post_test1/$', views.post_test1, name='post_test1'),
     url(r'^post_test2/$', views.post_test2, name='post_test2'),
 
+    # url(r'^login/$', view_login.login, name='login')
 
 ]

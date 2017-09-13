@@ -5,10 +5,18 @@
     <title>test2_index</title>
 </head>
 <body>
+
+login_user:{{uname}}
+
+<hr>
+
+<a href="{%url 'main:login'%}">登陆</a>
+<hr>
+<a href="{%url 'main:logout'%}">退出</a>
 <ul>
-{%for book in res%}
-    <li>{{book.btitle}}</li>
-{%endfor%}
+<!--{%for book in res%}-->
+    <!--<li>{{book.btitle}}</li>-->
+<!--{%endfor%}-->
 </ul>
 </body>
 </html>

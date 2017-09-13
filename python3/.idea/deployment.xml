@@ -12,7 +12,7 @@
       <paths name="lik_virtual">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/django-all/mysql-test" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/django-all/" web="/" />
           </mappings>
         </serverdata>
       </paths>

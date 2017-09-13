@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>123</title>
+</head>
+<body>
+<a href="{%url 'booktest:show_test'%}">反向解析</a>
+<!--{{hero}}-->
+<!--{{hero.show_book}}-->
+<ul>
+{%for hero in hero_list%}
+{%if forloop.counter|divisibleby:'2'%}
+<li style="color:red">{{hero}}</li>
+    {%else%}
+    <li style="color:green">{{hero}}</li>
+    {%endif %}
+{%empty%}
+{%endfor%}
+</ul>
+</body>
+</html>

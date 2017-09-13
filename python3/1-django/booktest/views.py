@@ -7,7 +7,7 @@ from booktest.models import *
 
 
 def index(request):
-    # temp = loader.get_template('booktest/index.html')
+    # temp = loader.get_template('booktest/login.html')
     # return HttpResponse(temp.render())
     # book_list = BookInfo
     # book_list = [1, 2, 3]
@@ -15,7 +15,7 @@ def index(request):
     b = BookInfo()
     b.btitle='123'
     context={'list':bookList}
-    return render(request,'booktest/index.html',context)
+    return render(request,'booktest/login.html',context)
 
 
 def show(request, book_id):

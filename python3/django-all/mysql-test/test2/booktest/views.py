@@ -1,13 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from booktest.models import BookInfo
 # Create your views here.
 from django.http import HttpResponse
 
 
-def index(request):
-    res = BookInfo.books1.filter(id__lt=5)
-    context = {'res': res}
-    return render(request, 'booktest/index.html', context)
+# def index(request):
+#     res = BookInfo.books1.filter(id__lt=5)
+#     context = {'res': res}
+#     return render(request, 'booktest/login.html', context)
 
 
 def test(request):
