@@ -6,7 +6,7 @@ def index(request):
     uname = request.session.get('uname')
     # upwd = request.session.get('upwd')
     context = {'uname': uname}
-    return render(request, 'booktest/index.html', context)
+    return render(request, 'booktest/base.html', context)
 
 
 def login(request):

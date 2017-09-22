@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>verify1</title>
+</head>
+<body>
+<form action="{%url 'booktest:verify2'%}" method="post">
+    {%csrf_token%}
+    <img src="show_verify">
+    <hr>
+    <input type="text" name="verify"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

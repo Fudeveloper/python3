@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list_hero</title>
+</head>
+<body>
+<ul>
+{%for hero in page%}
+    <li>{{hero.hname}}</li>
+{%endfor%}
+
+    {%for index in page.paginator.page_range%}
+    {%if index == page.number%}
+    {{index}}
+
+    {%else%}
+        <a href="{%url 'booktest:hero_list' index%}">{{index}}</a>
+    {%endif%}
+<!--/list_hero/{{index}}-->
+    {%endfor%}
+
+</ul>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/jquery-1.12.4.min.js"></script>
+     <script>
+        $(function () {
+//            document.writeln(123);
+            //查询省信息
+            pro=$('#pro');
+            $.get('/area/0/',function (result) {//{data:[[],[],[]]}
+                $.each(result.data_list,function (index, item) {//[id,title]
+//                    document.writeln(item);
+                    pro.append('<option value="'+item[0]+'">'+item[1]+'</option>')
+//                document.writeln(data_list)
+                })
+            })
+
+            //查询市信息
+
+        });
+
+    </script>
+
+</head>
+<body>
+<select id="pro" >
+    <option value="">请选择省123</option>
+</select>
+
+<select id="city">
+    <option value="">请选择市</option>
+</select>
+
+<select id="dis">
+    <option value="">请选择区</option>
+</select>
+</body>
+</html>

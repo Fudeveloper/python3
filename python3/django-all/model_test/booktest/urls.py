@@ -10,6 +10,8 @@ urlpatterns = [
    url(r'^csrf1/$', views.csrf1, name='csrf1'),
    url(r'^csrf2/$', views.csrf2, name='csrf2'),
    url(r'^verify1/$', views.verify1, name='verify1'),
-   url(r'^verify2/$', views.verify2, name='verify2')
+   url(r'^verify2/$', views.verify2, name='verify2'),
+   url(r'^show_verify/$', views.show_verify, name='show_verify'),
+
 
 ]
