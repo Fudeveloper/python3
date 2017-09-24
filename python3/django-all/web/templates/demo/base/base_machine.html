@@ -1,0 +1,35 @@
+{%extends 'demo/base/base.html'%}
+{%block display_machine%}style="display: block;"{%endblock display_machine%}
+{%block display_product%}style="display: none;"{%endblock display_product%}>
+{%block display_envir%}style="display: none;"{%endblock display_envir%}>
+
+
+{%block page_title%}
+<ul class="breadcrumb">
+
+    <li>
+
+        <i class="icon-home"></i>
+
+        <a href="{%url 'demo:index'%}">动力监控</a>
+
+        <i class="icon-angle-right"></i>
+
+    </li>
+
+    <li><a href="#">{%block page_name%}block page_name{%endblock page_name%}</a></li>
+
+    <li class="pull-right no-text-shadow">
+        <!--主面板右侧-->
+    </li>
+
+</ul>
+{%endblock page_title%}
+
+{%block big_title%}
+<h3 class="page-title">
+
+    动力监控
+
+</h3>
+{%endblock big_title%}

@@ -1,2 +1,3354 @@
-{%extends 'demo/base.html'%}
-{%block title%}首页{%endblock title%}
+首页
+{%extends 'demo/base/base.html'%}
+
+
+{%block title%}
+首页
+{%endblock title%}
+
+{%block up_left%}
+<div class="span6">
+
+    <div class="portlet box purple">
+
+        <div class="portlet-title">
+
+            <div class="caption"><i class="icon-calendar"></i>动力</div>
+
+            <div class="actions">
+
+                <a href="javascript:;" class="btn yellow easy-pie-chart-reload"><i
+                        class="icon-repeat"></i> 刷新</a>
+
+            </div>
+
+        </div>
+
+        <div class="portlet-body">
+
+            <div class="row-fluid">
+
+                <div class="span4">
+
+                    <div class="easy-pie-chart">
+
+                        <div class="number transactions" data-percent="55"><span>+55</span>%</div>
+
+                        <a class="title" href="{%url 'demo:switch'%}">配电开关<i class="m-icon-swapright"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="margin-bottom-10 visible-phone"></div>
+
+                <div class="span4">
+
+                    <div class="easy-pie-chart">
+
+                        <div class="number visits" data-percent="85"><span>+85</span>%</div>
+
+                        <a class="title" href="{%url 'demo:distribution_box'%}">精密配电柜 <i class="m-icon-swapright"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="margin-bottom-10 visible-phone"></div>
+
+                <div class="span4">
+
+                    <div class="easy-pie-chart">
+
+                        <div class="number bounce" data-percent="46"><span>-46</span>%</div>
+
+                        <a class="title" href="{%url 'demo:dynamo'%}">发电机 <i class="m-icon-swapright"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+{%endblock up_left%}
+
+{%block up_right%}
+<div class="span6">
+    <div class="portlet box purple">
+
+        <div class="portlet-title">
+
+            <div class="caption"><i class="icon-calendar"></i>环境</div>
+
+            <div class="actions">
+
+                <a href="javascript:;" class="btn yellow easy-pie-chart-reload"><i
+                        class="icon-repeat"></i> 刷新</a>
+
+            </div>
+
+        </div>
+
+        <div class="portlet-body">
+
+            <div class="row-fluid">
+
+                <div class="span4">
+
+                    <div class="easy-pie-chart">
+
+                        <div class="number transactions" data-percent="55"><span>+55</span>%</div>
+
+                        <a class="title" href="{%url 'demo:fresh_air'%}">新风机 <i class="m-icon-swapright"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="margin-bottom-10 visible-phone"></div>
+
+                <div class="span4">
+
+                    <div class="easy-pie-chart">
+
+                        <div class="number visits" data-percent="85"><span>+85</span>%</div>
+
+                        <a class="title" href="{%url 'demo:exhaust'%}">排风机<i class="m-icon-swapright"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="margin-bottom-10 visible-phone"></div>
+
+                <div class="span4">
+
+                    <div class="easy-pie-chart">
+
+                        <div class="number bounce" data-percent="46"><span>-46</span>%</div>
+
+                        <a class="title" href="{%url 'demo:lighting'%}">灯光照明 <i class="m-icon-swapright"></i></a>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+{%endblock up_right%}
+
+{%block down_left%}
+<div class="span6">
+
+    <!-- BEGIN PORTLET-->
+
+    <div class="portlet paddingless">
+
+        <div class="portlet-title line">
+
+            <div class="caption"><i class="icon-bell"></i>动力监控日志</div>
+            <!---->
+            <div class="tools">
+
+                <a href="" class="collapse"></a>
+
+                <a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+                <a href="" class="reload"></a>
+
+                <a href="" class="remove"></a>
+
+            </div>
+
+        </div>
+        <div class="portlet-body">
+
+            <!--BEGIN TABS-->
+
+            <div class="tabbable tabbable-custom">
+
+                <!--<ul class="nav nav-tabs">-->
+
+                <!--<li class="active"><a href="#tab_1_1" data-toggle="tab">系统消息</a></li>-->
+
+                <!--&lt;!&ndash;<li><a href="#tab_1_2" data-toggle="tab">Activities</a></li>&ndash;&gt;-->
+
+                <!--<li><a href="#tab_1_3" data-toggle="tab"></a></li>-->
+
+                <!--</ul>-->
+
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="tab_1_10">
+
+                        <div class="scroller" data-height="290px" data-always-visible="1"
+                             data-rail-visible="0">
+
+                            <ul class="feeds">
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-success">
+
+                                                    <i class="icon-bell"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                   55555
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            Just now
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New version v1.4 just lunched!
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                20 mins
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-important">
+
+                                                    <i class="icon-bolt"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                     1号发电机负载异常。
+
+                                                    <span class="label label-important label-mini">
+
+																			<a href="#">去查看
+
+																			<i class="icon-share-alt"></i>
+
+                                                                                </a>
+																			</span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            24 mins
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意1
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            30 mins
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-success">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            40 mins
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-warning">
+
+                                                    <i class="icon-plus"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    添加了1个新设备
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            1.5 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-success">
+
+                                                    <i class="icon-bell-alt"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    Web server hardware needs to be upgraded.
+
+                                                    <span class="label label-inverse label-mini">Overdue</span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            2 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            3 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-warning">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            5 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            18 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            21 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            22 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            21 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            22 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            21 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            22 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            21 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            22 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="tab_1_11">
+
+                        <div class="scroller" data-height="290px" data-always-visible="1"
+                             data-rail-visible1="1">
+
+                            <ul class="feeds">
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New order received
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                10 mins
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-important">
+
+                                                    <i class="icon-bolt"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    Order #24DOP4 has been rejected.
+
+                                                    <span class="label label-important label-mini">Take action <i
+                                                            class="icon-share-alt"></i></span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            24 mins
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="tab_1_12">
+
+                        <div class="scroller" data-height="290px" data-always-visible="1"
+                             data-rail-visible1="1">
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Robert Nilson</a>
+
+                                            <span class="label label-success">Approved</span>
+
+                                        </div>
+
+                                        <div>29 Jan 2013 10:45AM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 10:45AM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Eric Kim</a>
+
+                                            <span class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Eric Kim</a>
+
+                                            <span class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div><a href="#">Eric Kim</a> <span
+                                                class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div><a href="#">Eric Kim</a> <span
+                                                class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Eric Kim</a>
+
+                                            <span class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--END TABS-->
+
+        </div>
+        <!--折线图-->
+        <!--<div class="portlet-body">-->
+
+        <!--<div id="site_statistics_loading">-->
+
+        <!--<img src="/static/image/loading.gif" alt="loading"/>-->
+
+        <!--</div>-->
+
+        <!--<div id="site_statistics_content" class="hide">-->
+
+        <!--<div id="site_statistics" class="chart"></div>-->
+
+        <!--</div>-->
+
+        <!--</div>-->
+
+    </div>
+
+    <!-- END PORTLET-->
+
+</div>
+{%endblock down_left%}
+
+{%block down_right%}
+<div class="span6">
+
+    <!-- BEGIN PORTLET-->
+    <div class="portlet paddingless">
+
+        <div class="portlet-title line">
+
+            <div class="caption"><i class="icon-bell"></i>环境监控日志</div>
+
+            <div class="tools">
+
+                <a href="" class="collapse"></a>
+
+                <a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+                <a href="" class="reload"></a>
+
+                <a href="" class="remove"></a>
+
+            </div>
+
+        </div>
+
+        <div class="portlet-body">
+
+            <!--BEGIN TABS-->
+
+            <div class="tabbable tabbable-custom">
+
+                <!--<ul class="nav nav-tabs">-->
+
+                <!--<li class="active"><a href="#tab_1_1" data-toggle="tab">系统消息</a></li>-->
+
+                <!--<li><a href="#tab_1_2" data-toggle="tab">Activities</a></li>-->
+
+                <!--<li><a href="#tab_1_3" data-toggle="tab"></a></li>-->
+
+                <!--</ul>-->
+
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="tab_1_1">
+
+                        <div class="scroller" data-height="290px" data-always-visible="1"
+                             data-rail-visible="0">
+
+                            <ul class="feeds">
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-success">
+
+                                                    <i class="icon-bell"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    You have 4 pending tasks.
+
+                                                    <span class="label label-important label-mini">
+
+																			Take action
+
+																			<i class="icon-share-alt"></i>
+
+																			</span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            Just now
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New version v1.4 just lunched!
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                20 mins
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-important">
+
+                                                    <i class="icon-bolt"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    44444
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            24 mins
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            30 mins
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-success">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            40 mins
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-warning">
+
+                                                    <i class="icon-plus"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    New user registered.
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            1.5 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-success">
+
+                                                    <i class="icon-bell-alt"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    Web server hardware needs to be upgraded.
+
+                                                    <span class="label label-inverse label-mini">Overdue</span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            2 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            3 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-warning">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            5 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            18 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            21 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            22 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            21 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            22 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            21 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            22 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            21 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-info">
+
+                                                    <i class="icon-bullhorn"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    请注意
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            22 hours
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="tab_1_2">
+
+                        <div class="scroller" data-height="290px" data-always-visible="1"
+                             data-rail-visible1="1">
+
+                            <ul class="feeds">
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New order received
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                10 mins
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="col1">
+
+                                        <div class="cont">
+
+                                            <div class="cont-col1">
+
+                                                <div class="label label-important">
+
+                                                    <i class="icon-bolt"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-col2">
+
+                                                <div class="desc">
+
+                                                    Order #24DOP4 has been rejected.
+
+                                                    <span class="label label-important label-mini">Take action <i
+                                                            class="icon-share-alt"></i></span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col2">
+
+                                        <div class="date">
+
+                                            24 mins
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+
+                                        <div class="col1">
+
+                                            <div class="cont">
+
+                                                <div class="cont-col1">
+
+                                                    <div class="label label-success">
+
+                                                        <i class="icon-bell"></i>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cont-col2">
+
+                                                    <div class="desc">
+
+                                                        New user registered
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col2">
+
+                                            <div class="date">
+
+                                                Just now
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="tab_1_3">
+
+                        <div class="scroller" data-height="290px" data-always-visible="1"
+                             data-rail-visible1="1">
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Robert Nilson</a>
+
+                                            <span class="label label-success">Approved</span>
+
+                                        </div>
+
+                                        <div>29 Jan 2013 10:45AM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 10:45AM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Eric Kim</a>
+
+                                            <span class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Eric Kim</a>
+
+                                            <span class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div><a href="#">Eric Kim</a> <span
+                                                class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div><a href="#">Eric Kim</a> <span
+                                                class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row-fluid">
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Eric Kim</a>
+
+                                            <span class="label label-info">Pending</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 12:45PM</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 user-info">
+
+                                    <img alt="" src="/static/image/avatar.png"/>
+
+                                    <div class="details">
+
+                                        <div>
+
+                                            <a href="#">Lisa Miller</a>
+
+                                            <span class="label label-important">In progress</span>
+
+                                        </div>
+
+                                        <div>19 Jan 2013 11:55PM</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--END TABS-->
+
+        </div>
+
+    </div>
+
+</div>
+{%endblock down_right%}
+
+{%block page_title%}
+<ul class="breadcrumb">
+
+    <li>
+
+        <i class="icon-home"></i>
+
+        <a href="{%url 'demo:index'%}">主页</a>
+
+        <i class="icon-angle-right"></i>
+
+    </li>
+
+    <li><a href="#">主面板</a></li>
+
+    <li class="pull-right no-text-shadow">
+        <!--主面板右侧-->
+    </li>
+
+</ul>
+{%endblock page_title%}
+
+{%block big_title%}
+<h3 class="page-title">
+
+    主面板
+
+</h3>
+{%endblock big_title%}

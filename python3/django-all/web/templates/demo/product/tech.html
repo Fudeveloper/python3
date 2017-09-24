@@ -1,0 +1,323 @@
+工艺管理
+{%extends 'demo/base/base_product.html'%}
+
+<div class="span12">
+
+
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+                    <div class="portlet box blue">
+
+                        <div class="portlet-title">
+
+                            <div class="caption"><i class="icon-edit"></i>编辑</div>
+
+                            <div class="tools">
+
+                                <a href="javascript:;" class="collapse"></a>
+
+                                <a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+                                <a href="javascript:;" class="reload"></a>
+
+                                <a href="javascript:;" class="remove"></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="portlet-body">
+
+                            <div class="clearfix">
+
+                                <div class="btn-group">
+
+                                    <button id="sample_editable_1_new" class="btn green">
+
+                                        添加 <i class="icon-plus"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="btn-group pull-right">
+
+                                    <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="icon-angle-down"></i>
+
+                                    </button>
+
+
+                                </div>
+
+                            </div>
+
+                            <div id="sample_editable_1_wrapper" class="dataTables_wrapper form-inline" role="grid"><div class="row-fluid"><div class="span6"><div id="sample_editable_1_length" class="dataTables_length"><label><div class="select2-container m-wrap small" id="s2id_autogen1"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span>5</span><abbr class="select2-search-choice-close" style="display:none;"></abbr>   <div><b></b></div></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen2"><div class="select2-drop select2-with-searchbox" style="display:none">   <div class="select2-search">       <input type="text" autocomplete="off" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select size="1" name="sample_editable_1_length" aria-controls="sample_editable_1" class="m-wrap small select2-offscreen" tabindex="-1"><option value="5" selected="selected">5</option><option value="15">15</option><option value="20">20</option><option value="-1">All</option></select> records per page</label></div></div><div class="span6"><div class="dataTables_filter" id="sample_editable_1_filter"><label>Search: <input type="text" aria-controls="sample_editable_1" class="m-wrap medium"></label></div></div></div><table class="table table-striped table-hover table-bordered dataTable" id="sample_editable_1" aria-describedby="sample_editable_1_info">
+
+                                <thead>
+
+                                <tr role="row"><th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="工艺名称" style="width: 350px;">工艺名称</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="简介: activate to sort column ascending" style="width: 207px;">简介</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="具体参数: activate to sort column ascending" style="width: 350px;">具体参数</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="备注: activate to sort column ascending" style="width: 207px;">备注</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="修改: activate to sort column ascending" style="width: 208px;">修改</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="删除: activate to sort column ascending" style="width: 208px;">删除</th></tr>
+
+                                </thead>
+
+
+
+                            <tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="odd">
+
+                                    <td class=" sorting_1">冲压</td>
+
+                                    <td class=" ">冲压</td>
+
+                                    <td class=" ">冲压</td>
+
+                                    <td class="center ">冲压</td>
+
+                                    <td class=" "><a class="edit" href="javascript:;">修改</a></td>
+
+                                    <td class=" "><a class="delete" href="javascript:;">删除</a></td>
+
+                                </tr><tr class="even">
+
+                                    <td class=" sorting_1">折弯</td>
+
+                                    <td class=" ">折弯</td>
+
+                                    <td class=" ">折弯</td>
+
+                                    <td class="center ">折弯</td>
+
+                                    <td class=" "><a class="edit" href="javascript:;">修改</a></td>
+
+                                    <td class=" "><a class="delete" href="javascript:;">删除</a></td>
+
+                                </tr><tr class="odd">
+
+                                    <td class=" sorting_1">抛光</td>
+
+                                    <td class=" ">抛光</td>
+
+                                    <td class=" ">抛光</td>
+
+                                    <td class="center ">抛光</td>
+
+                                    <td class=" "><a class="edit" href="javascript:;">修改</a></td>
+
+                                    <td class=" "><a class="delete" href="javascript:;">删除</a></td>
+
+                                </tr><tr class="even">
+
+                                    <td class=" sorting_1">焊接</td>
+
+                                    <td class=" ">焊接</td>
+
+                                    <td class=" ">焊接</td>
+
+                                    <td class="center ">焊接</td>
+
+                                    <td class=" "><a class="edit" href="javascript:;">修改</a></td>
+
+                                    <td class=" "><a class="delete" href="javascript:;">删除</a></td>
+
+                                </tr></tbody></table><div class="row-fluid"><div class="span6"><div class="dataTables_info" id="sample_editable_1_info">Showing 1 to 4 of 4 entries</div></div><div class="span6"><div class="dataTables_paginate paging_bootstrap pagination"><ul><li class="prev disabled"><a href="#">← <span class="hidden-480">Prev</span></a></li><li class="active"><a href="#">1</a></li><li class="next disabled"><a href="#"><span class="hidden-480">Next</span> → </a></li></ul></div></div></div></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- END EXAMPLE TABLE PORTLET-->
+
+                </div>
+
+{%block title%}工艺管理{%endblock title%}
+
+{%block page_name%}工艺管理{%endblock page_name%}
+{%block up_left%}
+<div class="row-fluid">
+
+                <div class="span12">
+
+                    {%block content%}
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+                    <div class="portlet box blue">
+
+                        <div class="portlet-title">
+
+                            <div class="caption"><i class="icon-edit"></i>编辑</div>
+
+                            <div class="tools">
+
+                                <a href="javascript:;" class="collapse"></a>
+
+                                <a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+                                <a href="javascript:;" class="reload"></a>
+
+                                <a href="javascript:;" class="remove"></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="portlet-body">
+
+                            <div class="clearfix">
+
+                                <div class="btn-group">
+
+                                    <button id="sample_editable_1_new" class="btn green">
+
+                                        添加 <i class="icon-plus"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="btn-group pull-right">
+
+                                    <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i
+                                            class="icon-angle-down"></i>
+
+                                    </button>
+
+
+                                </div>
+
+                            </div>
+
+                            <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+
+                                <thead>
+
+                                <tr>
+
+                                    <th>工艺名称</th>
+
+                                    <th>简介</th>
+
+                                    <th>具体参数</th>
+
+                                    <th>备注</th>
+                                    <!--<th></th>-->
+                                    <!--<th></th>-->
+                                    <th>修改</th>
+
+                                    <th>删除</th>
+
+                                </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                <tr class="">
+
+                                    <td>折弯</td>
+
+                                    <td>折弯</td>
+
+                                    <td>折弯</td>
+
+                                    <td class="center">折弯</td>
+
+                                    <td><a class="edit" href="javascript:;">修改</a></td>
+
+                                    <td><a class="delete" href="javascript:;">删除</a></td>
+
+                                </tr>
+
+                                <tr class="">
+
+                                    <td>冲压</td>
+
+                                    <td>冲压</td>
+
+                                    <td>冲压</td>
+
+                                    <td class="center">冲压</td>
+
+                                    <td><a class="edit" href="javascript:;">修改</a></td>
+
+                                    <td><a class="delete" href="javascript:;">删除</a></td>
+
+                                </tr>
+
+                                <tr class="">
+
+                                    <td>抛光</td>
+
+                                    <td>抛光</td>
+
+                                    <td>抛光</td>
+
+                                    <td class="center">抛光</td>
+
+                                    <td><a class="edit" href="javascript:;">修改</a></td>
+
+                                    <td><a class="delete" href="javascript:;">删除</a></td>
+
+                                </tr>
+
+                                <tr class="">
+
+                                    <td>焊接</td>
+
+                                    <td>焊接</td>
+
+                                    <td>焊接</td>
+
+                                    <td class="center">焊接</td>
+
+                                    <td><a class="edit" href="javascript:;">修改</a></td>
+
+                                    <td><a class="delete" href="javascript:;">删除</a></td>
+
+                                </tr>
+
+                                <!--<tr class="">-->
+
+                                    <!--<td>webriver</td>-->
+
+                                    <!--<td>Antonio Sanches</td>-->
+
+                                    <!--<td>462</td>-->
+
+                                    <!--<td class="center">new user</td>-->
+
+                                    <!--<td><a class="edit" href="javascript:;">修改</a></td>-->
+
+                                    <!--<td><a class="delete" href="javascript:;">删除</a></td>-->
+
+                                <!--</tr>-->
+
+                                <!--<tr class="">-->
+
+                                    <!--<td>gist124</td>-->
+
+                                    <!--<td>Nick Roberts</td>-->
+
+                                    <!--<td>62</td>-->
+
+                                    <!--<td class="center">new user</td>-->
+
+                                    <!--<td><a class="edit" href="javascript:;">修改</a></td>-->
+
+                                    <!--<td><a class="delete" href="javascript:;">删除</a></td>-->
+
+                                <!--</tr>-->
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                    {%endblock content%}
+                    <!-- END EXAMPLE TABLE PORTLET-->
+
+                </div>
+
+            </div>
+{%endblock up_left%}
