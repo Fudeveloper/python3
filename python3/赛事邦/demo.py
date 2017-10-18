@@ -5,6 +5,7 @@ import time
 import os
 from pymouse import PyMouse
 from pykeyboard import PyKeyboard
+from selenium import webdriver
 
 m = PyMouse()
 k = PyKeyboard()
@@ -13,39 +14,52 @@ k = PyKeyboard()
 passwd = "aabbcc123"
 
 # 当前索引
-now_index = 2
+now_index = 7
 
 # 账号
 phone_number = phone.get_phone_by_index(now_index)
 
 # 封面图片路径
-img1 = r"C:\Users\Administrator\Desktop\{0}-1.png".format(now_index)
+img1 = r"C:\Users\Administrator\Desktop\img\{0}-0.jpg".format(now_index)
 # 代表图路径
-img2 = r"C:\Users\Administrator\Desktop\{0}-2.png".format(now_index)
+img2 = r"C:\Users\Administrator\Desktop\img\{0}-1.jpg".format(now_index)
 import teacher_info
 
 random_index = random.choice(range(15))
 teacher = teacher_info.get_teacher_by_index(random_index)
 # 作品名称
-product_name = "餐厅商业计划书"
+import return_title
+
+product_name = return_title.get_title_by_index(now_index)
 # 指导老师
 teacher_name = teacher['name']
 # 导师电话
 teacher_phone = teacher['phone']
 # 团队成员账号
-member_username = phone.get_phone_by_index(200 - now_index)
+member_username = ""
 # 设计创意说明
-idea = "宗旨， 以“真诚办事， 寻求杰出;创造康健，共同分享”为任务，实行差异化战略和品牌战略，打造 DIY 特色品牌， 办事一流特色品牌， 环境优雅特色品牌， 餐厅范围大品牌， 康健宁静饮食品牌。"
+idea_start_index = now_index * 50
+import return_idea
+
+idea = return_idea.get_content_by_start(idea_start_index)
 # 项目摘要
-summary = "长期生长战略， 具体战略如下： ? 初期战略(1-2 年) 初期的策划战略紧张是创建主顾干系，与食风致料商家创建业务干系，在主顾口中打出良好 的口碑; 紧张的市场战略为先开辟目的市场的重点或紧张主顾， 在主顾心目中创建本身的品牌形象，积累无形资产，可以大概收回初期投资并赢利;同时准备扩大餐厅策划范围，开辟更多的潜在客 户，提高市场份额。"
+import return_summary
+
+summary = return_summary.get_summary_by_start_index(idea_start_index)
 # 市场分析与营销策略
-analysis = "餐饮业是全中国第三产业中一个非常紧张的支柱， 中国人有一句俗话： 民以食为天。 据相识， 中高收入国家平均每 268 人就拥有一家餐馆，而在我国约 2000 人才拥有一家餐馆。这一数字表 明，中国的餐饮市场远远没有饱和，潜力很大，巨大的商机在等着我们去施展本身的聪明本领， 甜睡的金山等候着我们去发掘。"
+import return_analysis
+
+analysis = return_analysis.get_finance_by_start_index(idea_start_index)
 # 投资、财务、风险分析与对策
-finance = "餐厅在初期的策划战略紧张是创建主顾干系，与食风致料商家创建业务干系，在主顾口中打 出良好的口碑; 紧张的市场战略为先开辟目的市场的重点或紧张主顾， 在主顾心目中创建本身的 品牌形象，积累无形资产，可以大概收回初期投资并赢利;同时准备扩大餐厅策划范围，开辟更多的 潜在客户，提高市场份额。 第一年紧张任务： (1)开心开辟市场，依据消耗者要求，扩大业务范畴;真诚办本家儿顾，提高餐厅质量，树 立品牌形象; (2)餐厅的消耗议决宣传事情举行投放; (3)在仙林大学城创建营销渠道网; (4)与食物质料方创建业务条约干系，包管餐厅的连续供货渠道. "
+import return_finance
+
+finance = return_finance.get_analysis_by_start_index(idea_start_index)
 # 团组成与企业愿景
-vision = "随着社会的生长，人们的生存在物质方面得到餍足后，便开始寻求精神层面的享受。而人对 精神层面的需求排在最顶尖的便是自我实现的需求。这也是近几年来 DIY(Do it yourself,“亲 历亲为”，本身去做，本身段验，挑衅自我，享受此中快乐的一种精神)鼓起的缘故原由。而做饭， 可以说是传统的 DIY。大部门人都市做饭，至少也会做一两个菜(这也是这个项目可以实施的一 个须要条件)。"
+import return_vision
+
+vision = return_vision.get_vision_by_start_index(idea_start_index)
 # ------------------------------------------------ 运行部分 ------------------------------------------------
-from selenium import webdriver
+
 
 driver = webdriver.Firefox()
 
@@ -79,11 +93,10 @@ time.sleep(1)
 # 上传参赛作品代表图
 btns_img[2].click()
 time.sleep(1)
-k.type_string(img1)
+k.type_string(img2)
 time.sleep(1)
 k.press_key(k.enter_key)
 time.sleep(1)
-
 
 # ------------------------------------------------ 信息填写 ------------------------------------------------
 from selenium.webdriver.support.select import Select
@@ -124,7 +137,9 @@ k.press_key(k.enter_key)
 
 time.sleep(3)
 # ------------------------------------------------ 提交 ------------------------------------------------
-# driver.find_element_by_id("release-btn").click()
-# time.sleep(3)
-# for i in range(10):
-#     m.click(808 - 200 + 50, 585 - 110, 1)
+driver.find_element_by_id("release-btn").click()
+time.sleep(3)
+for i in range(10):
+    m.click(808 - 200 + 50, 585 - 110, 1)
+with open('complete.txt', 'a') as f:
+    f.write(str(now_index) + '----' + phone_number + '\n')
