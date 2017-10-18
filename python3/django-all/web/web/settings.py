@@ -24,7 +24,7 @@ SECRET_KEY = '079t@itrxik--1q0^*fs$b61jf+bqwpu8_%n!+aysg@$u9-v)='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -41,7 +41,7 @@ INSTALLED_APPS = (
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -74,12 +74,8 @@ WSGI_APPLICATION = 'web.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'webdemo',
-        'USER': 'root',
-        'PASSWORD': 'lik',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -104,3 +100,18 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+
+# 需要先设置POP3/SMTP服务
+# 主机
+EMAIL_HOST = "smtp.sina.com"
+# 端口
+EMAIL_PORT = 25
+# 发件人邮箱
+EMAIL_HOST_USER = "awo951127@sina.com"
+# 密码
+EMAIL_HOST_PASSWORD = "wo951127"
+# 是否使用https
+EMAIL_USE_TLS = False
+# 发件人
+EMAIL_FROM = "awo951127"

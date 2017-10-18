@@ -1,0 +1,33 @@
+{%extends 'demo/base/base.html'%}
+
+{%block display_data%}style="display: block;"{%endblock display_data%}>
+
+{%block page_title%}
+<ul class="breadcrumb">
+
+    <li>
+
+        <i class="icon-home"></i>
+
+        <a href="{%url 'demo:index'%}">生产数据</a>
+
+        <i class="icon-angle-right"></i>
+
+    </li>
+
+    <li><a href="#">{%block page_name%}block page_name{%endblock page_name%}</a></li>
+
+    <li class="pull-right no-text-shadow">
+        <!--主面板右侧-->
+    </li>
+
+</ul>
+{%endblock page_title%}
+
+{%block big_title%}
+
+
+    生产数据
+
+
+{%endblock big_title%}

@@ -1,0 +1,34 @@
+{%extends 'demo/base/base.html'%}
+<!--{%block display_machine%}style="display: none;"{%endblock display_machine%}-->
+<!--{%block display_product%}style="display: none;"{%endblock display_product%}>-->
+{%block display_sale%}style="display: block;"{%endblock display_sale%}>
+
+
+{%block page_title%}
+<ul class="breadcrumb">
+
+    <li>
+
+        <i class="icon-home"></i>
+
+        <a href="{%url 'demo:index'%}">销售管理</a>
+
+        <i class="icon-angle-right"></i>
+
+    </li>
+
+    <li><a href="#">{%block page_name%}block page_name{%endblock page_name%}</a></li>
+
+    <li class="pull-right no-text-shadow">
+        <!--主面板右侧-->
+    </li>
+
+</ul>
+{%endblock page_title%}
+
+{%block big_title%}
+
+
+    销售管理
+
+{%endblock big_title%}

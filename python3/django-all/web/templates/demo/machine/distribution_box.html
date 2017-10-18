@@ -9,27 +9,137 @@
 {%block up_left%}
 <div class="portlet box red">
 
-							<div class="portlet-title">
+    <div class="portlet-title">
 
-								<div class="caption"><i class="icon-cogs"></i>精密配电柜开关状态表1</div>
+        <div class="caption"><i class="icon-cogs"></i>精密配电柜总线状态</div>
 
-								<div class="tools">
+        <div class="tools">
 
-									<a href="javascript:;" class="collapse"></a>
+            <a href="javascript:;" class="collapse"></a>
 
-									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+            <a href="#portlet-config" data-toggle="modal" class="config"></a>
 
-									<a href="javascript:;" class="reload"></a>
+            <a href="javascript:;" class="reload"></a>
 
-									<a href="javascript:;" class="remove"></a>
+            <a href="javascript:;" class="remove"></a>
 
-								</div>
+        </div>
 
-							</div>
+    </div>
 
-							<div class="portlet-body">
+    <div class="portlet-body">
 
-								<table class="table table-hover">
+        <table class="table table-hover">
+
+            <thead>
+
+            <tr>
+
+                <th>编号</th>
+
+                <th>名称</th>
+
+                <th>精密配电柜电压</th>
+
+                <th class="hidden-480">精密配电柜电流</th>
+
+                <th>状态</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody>
+
+            <tr>
+
+                <td>1</td>
+
+                <td>精密配电柜1</td>
+
+                <td>0V</td>
+
+                <td class="hidden-480">0A</td>
+
+                <td><span class="label label-danger">停用</span></td>
+
+            </tr>
+
+            <!--<tr>-->
+
+            <!--<td>2</td>-->
+
+            <!--<td>Jacob</td>-->
+
+            <!--<td>Nilson</td>-->
+
+            <!--<td class="hidden-480">jac123</td>-->
+
+            <!--<td><span class="label label-info">Pending</span></td>-->
+
+            <!--</tr>-->
+
+            <!--<tr>-->
+
+            <!--<td>3</td>-->
+
+            <!--<td>Larry</td>-->
+
+            <!--<td>Cooper</td>-->
+
+            <!--<td class="hidden-480">lar</td>-->
+
+            <!--<td><span class="label label-warning">Suspended</span></td>-->
+
+            <!--</tr>-->
+
+            <!--<tr>-->
+
+                <!--<td>2</td>-->
+
+                <!--<td>精密配电柜2</td>-->
+
+                <!--<td>0V</td>-->
+
+                <!--<td class="hidden-480">0A</td>-->
+
+                <!--<td><span class="label label-danger">停用</span></td>-->
+
+            <!--</tr>-->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+{%endblock up_left%}
+
+{%block down_left%}
+<div class="portlet box red">
+
+    <div class="portlet-title">
+
+        <div class="caption"><i class="icon-cogs"></i>精密配电柜1支路开关状态</div>
+
+        <div class="tools">
+
+            <a href="javascript:;" class="collapse"></a>
+
+            <a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+            <a href="javascript:;" class="reload"></a>
+
+            <a href="javascript:;" class="remove"></a>
+
+        </div>
+
+    </div>
+
+    <div class="portlet-body">
+
+								<table class="table table-bordered table-hover">
 
 									<thead>
 
@@ -37,13 +147,9 @@
 
 											<th>编号</th>
 
-											<th>别名</th>
+											<th class="hidden-480">配电开关名称</th>
 
-											<th>位置</th>
-
-											<th class="hidden-480">备注</th>
-
-											<th>状态</th>
+											<th>配电开关状态</th>
 
 										</tr>
 
@@ -55,57 +161,31 @@
 
 											<td>1</td>
 
-											<td>精密配电柜1</td>
 
-											<td>1号线</td>
+											<td class="hidden-480">支路开关1</td>
 
-											<td class="hidden-480">1号线</td>
-
-											<td><span class="label label-success">正常</span></td>
+											<td><span class="label label-danger">  	关  </span></td>
 
 										</tr>
-
-										<!--<tr>-->
-
-											<!--<td>2</td>-->
-
-											<!--<td>Jacob</td>-->
-
-											<!--<td>Nilson</td>-->
-
-											<!--<td class="hidden-480">jac123</td>-->
-
-											<!--<td><span class="label label-info">Pending</span></td>-->
-
-										<!--</tr>-->
-
-										<!--<tr>-->
-
-											<!--<td>3</td>-->
-
-											<!--<td>Larry</td>-->
-
-											<!--<td>Cooper</td>-->
-
-											<!--<td class="hidden-480">lar</td>-->
-
-											<!--<td><span class="label label-warning">Suspended</span></td>-->
-
-										<!--</tr>-->
 
 										<tr>
 
 											<td>2</td>
 
-											<td>精密配电柜2</td>
+											<!--<td>Jacob</td>-->
 
-											<td>2号线</td>
+											<!--<td>Nilson</td>-->
 
-											<td class="hidden-480">2号线</td>
+											<td class="hidden-480">支路开关2</td>
 
-											<td><span class="label label-danger">停用</span></td>
+											<td><span class="label label-danger">关</span></td>
 
 										</tr>
+
+
+
+
+
 
 									</tbody>
 
@@ -113,5 +193,5 @@
 
 							</div>
 
-						</div>
-{%endblock up_left%}
+</div>
+{%endblock down_left%}

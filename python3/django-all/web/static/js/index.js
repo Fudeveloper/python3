@@ -207,7 +207,7 @@ var Index = function () {
             }
 
             function showTooltip(title, x, y, contents) {
-                $('<div id="tooltip" class="chart-tooltip"><div class="date">' + title + '<\/div><div class="label label-success">CTR: ' + x / 10 + '%<\/div><div class="label label-important">Imp: ' + x * 12 + '<\/div><\/div>').css({
+                $('<div id="tooltip" class="chart-tooltip"><div class="date">' + title + '<\/div><div class="label label-success">温度: ' + x/10  + '<\/div><div class="label label-important">湿度: ' + y/10 + '<\/div><\/div>').css({
                     position: 'absolute',
                     display: 'none',
                     top: y - 100,
@@ -220,7 +220,7 @@ var Index = function () {
             }
 
             function randValue() {
-                return (Math.floor(Math.random() * (1 + 50 - 20))) + 10;
+                return (Math.floor(Math.random() * (1  - 20))) + 10;
             }
 
             var pageviews = [
@@ -296,10 +296,10 @@ var Index = function () {
 
                 var plot_statistics = $.plot($("#site_statistics"), [{
                         data: pageviews,
-                        label: "Unique Visits"
+                        label: "温度，   报警值：<input type='text' style='width: 30px'/>"
                     }, {
                         data: visitors,
-                        label: "Page Views"
+                        label: "湿度，   报警值：<input type='text' style='width: 30px'/>"
                     }
                 ], {
                     series: {
@@ -350,7 +350,7 @@ var Index = function () {
                             var x = item.datapoint[0].toFixed(2),
                                 y = item.datapoint[1].toFixed(2);
 
-                            showTooltip('24 Jan 2013', item.pageX, item.pageY, item.series.label + " of " + x + " = " + y);
+                            showTooltip('2017年 9月 29日', item.pageX, item.pageY, item.series.label + " of " + x + " = " + y);
                         }
                     } else {
                         $("#tooltip").remove();

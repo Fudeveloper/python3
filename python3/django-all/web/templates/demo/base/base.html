@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 
-<!--
-
-Template Name: Metronic - Responsive Admin 主面板 Template build with Twitter Bootstrap 2.3.1
-
-Version: 1.3
-
-Author: KeenThemes
-
-Website: http://www.keenthemes.com/preview/?theme=metronic
-
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469
-
--->
 
 <!--[if IE 8]>
 <html lang="zh-cmn-Hans" class="ie8 no-js"><![endif]-->
@@ -24,7 +11,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <html lang="zh-cmn-Hans" class="no-js"> <!--<![endif]-->
 
 <!-- BEGIN HEAD -->
-
+{%block head%}
 <head>
 
     <meta charset="utf-8"/>
@@ -74,7 +61,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
     <link rel="shortcut icon" href="/static/image/favicon.ico"/>
 
 </head>
-
+{%endblock head%}
 <!-- END HEAD -->
 
 <!-- BEGIN BODY -->
@@ -95,7 +82,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
             <a class="brand" href="{%url 'demo:index'%}">
 
-                <img width="80" src="/static/image/logo.png" alt="logo"/>
+                <img width="80"  src="/static/image/logo.png" alt="logo"/>
 
             </a>
 
@@ -123,7 +110,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                         <i class="icon-warning-sign"></i>
 
-                        <span class="badge">6</span>
+                        <span class="badge">2</span>
 
                     </a>
 
@@ -131,23 +118,10 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                         <li>
 
-                            <p>You have 14 new notifications</p>
+                            <p>您有2条未读警告</p>
 
                         </li>
 
-                        <li>
-
-                            <a href="#">
-
-                                <span class="label label-success"><i class="icon-plus"></i></span>
-
-                                New user registered.
-
-                                <span class="time">Just now</span>
-
-                            </a>
-
-                        </li>
 
                         <li>
 
@@ -155,73 +129,33 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                                 <span class="label label-important"><i class="icon-bolt"></i></span>
 
-                                Server #12 overloaded.
+                                1号发电机负载异常
 
-                                <span class="time">15 mins</span>
+                                <span class="time">24 分钟前</span>
 
                             </a>
 
                         </li>
+
 
                         <li>
 
                             <a href="#">
 
-                                <span class="label label-warning"><i class="icon-bell"></i></span>
+                                <span class="label label-warning"><i class="icon-plus"></i></i></span>
 
-                                Server #2 not respoding.
+                                添加了1个新设备
 
-                                <span class="time">22 mins</span>
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#">
-
-                                <span class="label label-info"><i class="icon-bullhorn"></i></span>
-
-                                Application error.
-
-                                <span class="time">40 mins</span>
+                                <span class="time">1.5小时前</span>
 
                             </a>
 
                         </li>
 
-                        <li>
-
-                            <a href="#">
-
-                                <span class="label label-important"><i class="icon-bolt"></i></span>
-
-                                Database overloaded 68%.
-
-                                <span class="time">2 hrs</span>
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#">
-
-                                <span class="label label-important"><i class="icon-bolt"></i></span>
-
-                                2 user IP blocked.
-
-                                <span class="time">5 hrs</span>
-
-                            </a>
-
-                        </li>
 
                         <li class="external">
 
-                            <a href="#">See all notifications <i class="m-icon-swapright"></i></a>
+                            <a href="{%url 'demo:index'%}">查看所有日志<i class="m-icon-swapright"></i></a>
 
                         </li>
 
@@ -229,317 +163,9 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                 </li>
 
-                <!-- END NOTIFICATION DROPDOWN -->
 
-                <!-- BEGIN INBOX DROPDOWN -->
 
-                <li class="dropdown" id="header_inbox_bar">
 
-                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-
-                    <!--<i class="icon-envelope"></i>-->
-
-                    <!--<span class="badge">5</span>-->
-
-                    <!--</a>-->
-
-                    <ul class="dropdown-menu extended inbox">
-
-                        <li>
-
-                            <p>You have 12 new messages</p>
-
-                        </li>
-
-                        <li>
-
-                            <a href="inbox.html?a=view">
-
-                                <span class="photo"><img src="/static/image/avatar2.jpg" alt=""/></span>
-
-                                <span class="subject">
-
-								<span class="from">Lisa Wong</span>
-
-								<span class="time">Just Now</span>
-
-								</span>
-
-                                <span class="message">
-
-								Vivamus sed auctor nibh congue nibh. auctor nibh
-
-								auctor nibh...
-
-								</span>
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="inbox.html?a=view">
-
-                                <span class="photo"><img src="/static/image/avatar3.jpg" alt=""/></span>
-
-                                <span class="subject">
-
-								<span class="from">Richard Doe</span>
-
-								<span class="time">16 mins</span>
-
-								</span>
-
-                                <span class="message">
-
-								Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh
-
-								auctor nibh...
-
-								</span>
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="inbox.html?a=view">
-
-                                <span class="photo"><img src="/static/image/avatar1.jpg" alt=""/></span>
-
-                                <span class="subject">
-
-								<span class="from">Bob Nilson</span>
-
-								<span class="time">2 hrs</span>
-
-								</span>
-
-                                <span class="message">
-
-								Vivamus sed nibh auctor nibh congue nibh. auctor nibh
-
-								auctor nibh...
-
-								</span>
-
-                            </a>
-
-                        </li>
-
-                        <li class="external">
-
-                            <a href="inbox.html">See all messages <i class="m-icon-swapright"></i></a>
-
-                        </li>
-
-                    </ul>
-
-                </li>
-
-                <!-- END INBOX DROPDOWN -->
-
-                <!-- BEGIN TODO DROPDOWN -->
-
-                <li class="dropdown" id="header_task_bar">
-
-                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-
-                    <!--<i class="icon-tasks"></i>-->
-
-                    <!--<span class="badge">5</span>-->
-
-                    <!--</a>-->
-
-                    <ul class="dropdown-menu extended tasks">
-
-                        <li>
-
-                            <p>You have 12 pending tasks</p>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#">
-
-								<span class="task">
-
-								<span class="desc">New release v1.2</span>
-
-								<span class="percent">30%</span>
-
-								</span>
-
-                                <span class="progress progress-success ">
-
-								<span style="width: 30%;" class="bar"></span>
-
-								</span>
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#">
-
-								<span class="task">
-
-								<span class="desc">Application deployment</span>
-
-								<span class="percent">65%</span>
-
-								</span>
-
-                                <span class="progress progress-danger progress-striped active">
-
-								<span style="width: 65%;" class="bar"></span>
-
-								</span>
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#">
-
-								<span class="task">
-
-								<span class="desc">Mobile app release</span>
-
-								<span class="percent">98%</span>
-
-								</span>
-
-                                <span class="progress progress-success">
-
-								<span style="width: 98%;" class="bar"></span>
-
-								</span>
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#">
-
-								<span class="task">
-
-								<span class="desc">Database migration</span>
-
-								<span class="percent">10%</span>
-
-								</span>
-
-                                <span class="progress progress-warning progress-striped">
-
-								<span style="width: 10%;" class="bar"></span>
-
-								</span>
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#">
-
-								<span class="task">
-
-								<span class="desc">Web server upgrade</span>
-
-								<span class="percent">58%</span>
-
-								</span>
-
-                                <span class="progress progress-info">
-
-								<span style="width: 58%;" class="bar"></span>
-
-								</span>
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#">
-
-								<span class="task">
-
-								<span class="desc">Mobile development</span>
-
-								<span class="percent">85%</span>
-
-								</span>
-
-                                <span class="progress progress-success">
-
-								<span style="width: 85%;" class="bar"></span>
-
-								</span>
-
-                            </a>
-
-                        </li>
-
-                        <li class="external">
-
-                            <a href="#">See all tasks <i class="m-icon-swapright"></i></a>
-
-                        </li>
-
-                    </ul>
-
-                </li>
-
-                <!-- END TODO DROPDOWN -->
-
-                <!-- BEGIN USER LOGIN DROPDOWN -->
-
-                <li class="dropdown user">
-
-                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-
-                    <!--<img alt="" src="static/image/avatar1_small.jpg" />-->
-
-                    <!--<span class="username">Bob Nilson</span>-->
-
-                    <!--<i class="icon-angle-down"></i>-->
-
-                    <!--</a>-->
-
-                    <ul class="dropdown-menu">
-
-                        <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
-
-                        <li><a href="#"><i class="icon-calendar"></i> My Calendar</a></li>
-
-                        <li><a href="#"><i class="icon-envelope"></i> My Inbox(3)</a></li>
-
-                        <li><a href="#"><i class="icon-tasks"></i> My Tasks</a></li>
-
-                        <li class="divider"></li>
-
-                        <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li>
-
-                        <li><a href="#"><i class="icon-key"></i> Log Out</a></li>
-
-                    </ul>
-
-                </li>
-
-                <!-- END USER LOGIN DROPDOWN -->
 
             </ul>
 
@@ -602,7 +228,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
             <!--<li class="start active ">-->
 
-                <li class="">
+            <li class="">
                 <a href="{%url 'demo:index'%}">
 
                     <i class="icon-home"></i>
@@ -652,7 +278,13 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                             发电机</a>
 
                     </li>
+                    <li>
 
+                        <a href="{%url 'demo:air_pump'%}">
+
+                            空压机</a>
+
+                    </li>
 
                 </ul>
 
@@ -714,12 +346,112 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                     <li>
 
+                        <a href="{%url 'demo:smoke'%}">
+
+                            烟雾</a>
+
+                    </li>
+
+                    <li>
+
                         <a href="{%url 'demo:protection'%}">
 
                             防雷监测</a>
 
                     </li>
 
+                </ul>
+
+            </li>
+
+
+
+            <!---->
+
+            <!---->
+
+            <!---->
+
+
+            <!---->
+
+            <li class="">
+
+                <a href="javascript:;">
+
+                    <i class="icon-sitemap"></i>
+
+                    <span class="title">销售管理</span>
+
+                    <span class="arrow "></span>
+
+                </a>
+
+                <ul class="sub-menu" {%block display_sale%}{%endblock display_sale%}>
+
+                    <li>
+
+                        <a href="{%url 'demo:customer'%}">
+
+                            客户管理</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="{%url 'demo:order'%}">
+
+                            订单管理</a>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+<li class="">
+
+                <a href="javascript:;">
+
+                    <i class="icon-folder-close"></i>
+
+                    <span class="title">生产数据</span>
+
+                    <span class="arrow "></span>
+
+                </a>
+
+                <ul class="sub-menu" {%block display_data%}{%endblock display_data%}>
+
+                    <li>
+
+                        <a href="{%url 'demo:bom'%}">
+
+                            物料清单</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="{%url 'demo:basic_data'%}">
+
+                            基础数据设置</a>
+
+                    </li>
+                    <li>
+
+                        <a href="{%url 'demo:technology'%}">
+
+                            工艺管理</a>
+
+                    </li>
+                    <li>
+
+                        <a href="{%url 'demo:archives'%}">
+
+                            产品档案管理</a>
+
+                    </li>
 
                 </ul>
 
@@ -730,7 +462,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                     <i class="icon-th"></i>
 
-                    <span class="title">产品管理</span>
+                    <span class="title">生产管理</span>
 
                     <span class="arrow "></span>
 
@@ -740,50 +472,115 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                     <li>
 
-                        <a href="{%url 'demo:tech'%}">
+                        <a href="{%url 'demo:scheduling'%}">
 
-                            工艺管理</a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="{%url 'demo:archives'%}">
-
-                            产品档案管理</a>
+                            排产计划</a>
 
                     </li>
 
                     <li>
 
-                        <a href="{%url 'demo:plan'%}">
+                        <a href="{%url 'demo:purchase'%}">
 
-                            计划排产</a>
+                            采购计划</a>
 
                     </li>
 
                     <li>
 
-                        <a href="{%url 'demo:order_status'%}">
+                        <a href="{%url 'demo:depute'%}">
 
-                            订单状态监控</a>
+                            委外计划</a>
 
                     </li>
 
+
+                    <li>
+
+                        <a href="{%url 'demo:rate'%}">
+
+                            进度管理
+                        </a>
+
+                    </li>
 
                 </ul>
 
             </li>
-            <!---->
-
-            <!---->
-
-            <!---->
-
-
-            <!---->
-
             <li class="">
+
+                <a href="javascript:;">
+
+                    <i class="icon-folder-open"></i>
+
+                    <span class="title">采购管理</span>
+
+                    <span class="arrow "></span>
+
+                </a>
+
+                <ul class="sub-menu" {%block display_buy%}{%endblock display_buy%}>
+
+                    <li>
+
+                        <a href="{%url 'demo:supply'%}">
+
+                            供应商管理</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="{%url 'demo:buy'%}">
+
+                            采购管理</a>
+
+                    </li>
+
+                </ul>
+
+            </li>
+            <li class="">
+
+                <a href="javascript:;">
+
+                    <i class="icon-briefcase"></i>
+
+                    <span class="title">库存管理</span>
+
+                    <span class="arrow "></span>
+
+                </a>
+
+                <ul class="sub-menu" {%block display_inventory%}{%endblock display_inventory%}>
+
+                    <li>
+
+                        <a href="{%url 'demo:material'%}">
+
+                            原材料库</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="{%url 'demo:finished'%}">
+
+                            成品库</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="{%url 'demo:accessories'%}">
+
+                            辅料库</a>
+
+                    </li>
+                </ul>
+
+            </li>
+            <li class="last ">
 
                 <a href="javascript:;">
 
@@ -795,40 +592,38 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                 </a>
 
-                <ul class="sub-menu">
+                <ul class="sub-menu" {%block display_safe%}{%endblock display_safe%}>
 
                     <li>
 
-                        <a href="#">
+                        <a href="{%url 'demo:video'%}">
 
-                            1</a>
+                            监控视频</a>
 
                     </li>
 
                     <li>
 
-                        <a href="#">
+                        <a href="{%url 'demo:people'%}">
 
-                            2</a>
+                            人员进出记录</a>
 
                     </li>
 
                 </ul>
 
             </li>
+            <!--<li class="last ">-->
+
+                <!--<a href="#">-->
+                    <!--&lt;!&ndash;<i class="icon-bookmark-empty"></i>&ndash;&gt;-->
 
 
-            <li class="last ">
+                    <!--<span class="title"></span>-->
 
-                <a href="#">
-                    <i class="icon-bookmark-empty"></i>
+                <!--</a>-->
 
-
-                    <span class="title">预留功能</span>
-
-                </a>
-
-            </li>
+            <!--</li>-->
 
         </ul>
 
@@ -844,23 +639,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
         <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 
-        <div id="portlet-config" class="modal hide">
 
-            <div class="modal-header">
-
-                <button data-dismiss="modal" class="close" type="button"></button>
-
-                <h3>Widget Settings</h3>
-
-            </div>
-
-            <div class="modal-body">
-
-                Widget settings form goes here
-
-            </div>
-
-        </div>
 
         <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 
@@ -876,100 +655,77 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                     <!-- BEGIN STYLE CUSTOMIZER -->
 
-                    <!--<div class="color-panel hidden-phone">-->
+                    <div class="color-panel hidden-phone">
 
-                    <!--<div class="color-mode-icons icon-color"></div>-->
+                    <!--<div class="color-mode-icons icon-color">-->
+                        <!--<img width="80%"  src="/static/logo.jpg" alt="logo"/>-->
+                    <!--</div>-->
 
-                    <!--<div class="color-mode-icons icon-color-close"></div>-->
+                    <div class="color-mode-icons icon-color-close"></div>
 
-                    <!--<div class="color-mode">-->
+                    <div class="color-mode">
 
-                    <!--<p>主题样式</p>-->
 
-                    <!--<ul class="inline">-->
-
-                    <!--<li class="color-black current color-default" data-style="default"></li>-->
-
-                    <!--<li class="color-blue" data-style="blue"></li>-->
-
-                    <!--<li class="color-brown" data-style="brown"></li>-->
-
-                    <!--<li class="color-purple" data-style="purple"></li>-->
-
-                    <!--<li class="color-grey" data-style="grey"></li>-->
-
-                    <!--<li class="color-white color-light" data-style="light"></li>-->
-
-                    <!--</ul>-->
 
                     <!--<label>-->
 
-                    <!--<span>布局模式</span>-->
+                    <!--<span>Header</span>-->
 
-                    <!--<select class="layout-option m-wrap small">-->
+                    <!--<select class="header-option m-wrap small">-->
 
-                    <!--<option value="fluid" selected>适应屏幕</option>-->
+                    <!--<option value="fixed" selected>Fixed</option>-->
 
-                    <!--<option value="boxed">盒子</option>-->
+                    <!--<option value="default">Default</option>-->
 
                     <!--</select>-->
 
                     <!--</label>-->
 
-                    <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                    <!--<label>-->
 
-                    <!--&lt;!&ndash;<span>Header</span>&ndash;&gt;-->
+                    <!--<span>Sidebar</span>-->
 
-                    <!--&lt;!&ndash;<select class="header-option m-wrap small">&ndash;&gt;-->
+                    <!--<select class="sidebar-option m-wrap small">-->
 
-                    <!--&lt;!&ndash;<option value="fixed" selected>Fixed</option>&ndash;&gt;-->
+                    <!--<option value="fixed">Fixed</option>-->
 
-                    <!--&lt;!&ndash;<option value="default">Default</option>&ndash;&gt;-->
+                    <!--<option value="default" selected>Default</option>-->
 
-                    <!--&lt;!&ndash;</select>&ndash;&gt;-->
+                    <!--</select>-->
 
-                    <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                    <!--</label>-->
 
-                    <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                    <!--<label>-->
 
-                    <!--&lt;!&ndash;<span>Sidebar</span>&ndash;&gt;-->
+                    <!--<span>Footer</span>-->
 
-                    <!--&lt;!&ndash;<select class="sidebar-option m-wrap small">&ndash;&gt;-->
+                    <!--<select class="footer-option m-wrap small">-->
 
-                    <!--&lt;!&ndash;<option value="fixed">Fixed</option>&ndash;&gt;-->
+                    <!--<option value="fixed">Fixed</option>-->
 
-                    <!--&lt;!&ndash;<option value="default" selected>Default</option>&ndash;&gt;-->
+                    <!--<option value="default" selected>Default</option>-->
 
-                    <!--&lt;!&ndash;</select>&ndash;&gt;-->
+                    <!--</select>-->
 
-                    <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                    <!--</label>-->
 
-                    <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                    </div>
 
-                    <!--&lt;!&ndash;<span>Footer</span>&ndash;&gt;-->
-
-                    <!--&lt;!&ndash;<select class="footer-option m-wrap small">&ndash;&gt;-->
-
-                    <!--&lt;!&ndash;<option value="fixed">Fixed</option>&ndash;&gt;-->
-
-                    <!--&lt;!&ndash;<option value="default" selected>Default</option>&ndash;&gt;-->
-
-                    <!--&lt;!&ndash;</select>&ndash;&gt;-->
-
-                    <!--&lt;!&ndash;</label>&ndash;&gt;-->
-
-                    <!--</div>-->
-
-                    <!--</div>-->
+                    </div>
 
                     <!-- END BEGIN STYLE CUSTOMIZER -->
 
                     <!-- BEGIN PAGE TITLE & BREADCRUMB-->
-
+<h3 class="page-title">
                     {%block big_title%}
 
                     {%endblock big_title%}
+<div class="pull-right no-text-shadow">
+ <img width="68%"  src="/static/logo.jpg" alt="logo"/>
 
+
+    </div>
+</h3>
                     {%block page_title%}
 
 
@@ -1008,7 +764,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                 {%block down_left%}
 
 
-
                 {%endblock down_left%}
 
                 {%block down_right%}
@@ -1025,92 +780,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
             <div class="row-fluid">
 
                 <div class="span6">
-                    <!--功能7-->
-                    <!-- BEGIN REGIONAL STATS PORTLET-->
 
-                    <!--<div class="portlet">-->
-
-                    <!--<div class="portlet-title">-->
-
-                    <!--<div class="caption"><i class="icon-globe"></i>Regional Stats</div>-->
-
-                    <!--<div class="tools">-->
-
-                    <!--<a href="" class="collapse"></a>-->
-
-                    <!--<a href="#portlet-config" data-toggle="modal" class="config"></a>-->
-
-                    <!--<a href="" class="reload"></a>-->
-
-                    <!--<a href="" class="remove"></a>-->
-
-                    <!--</div>-->
-
-                    <!--</div>-->
-
-                    <!--<div class="portlet-body">-->
-
-                    <!--<div id="region_statistics_loading">-->
-
-                    <!--<img src="/static/image/loading.gif" alt="loading"/>-->
-
-                    <!--</div>-->
-
-                    <!--<div id="region_statistics_content" class="hide">-->
-
-                    <!--<div class="btn-toolbar">-->
-
-                    <!--<div class="btn-group " data-toggle="buttons-radio">-->
-
-                    <!--<a href="" class="btn mini active">Users</a>-->
-
-                    <!--<a href="" class="btn mini">Orders</a>-->
-
-                    <!--</div>-->
-
-                    <!--<div class="btn-group pull-right">-->
-
-                    <!--<a href="" class="btn mini dropdown-toggle" data-toggle="dropdown">-->
-
-                    <!--Select Region <span class="icon-angle-down"></span>-->
-
-                    <!--</a>-->
-
-                    <!--<ul class="dropdown-menu pull-right">-->
-
-                    <!--<li><a href="javascript:;" id="regional_stat_world">World</a></li>-->
-
-                    <!--<li><a href="javascript:;" id="regional_stat_usa">USA</a></li>-->
-
-                    <!--<li><a href="javascript:;" id="regional_stat_europe">Europe</a></li>-->
-
-                    <!--<li><a href="javascript:;" id="regional_stat_russia">Russia</a></li>-->
-
-                    <!--<li><a href="javascript:;" id="regional_stat_germany">Germany</a></li>-->
-
-                    <!--</ul>-->
-
-                    <!--</div>-->
-
-                    <!--</div>-->
-
-                    <!--<div id="vmap_world" class="vmaps chart hide"></div>-->
-
-                    <!--<div id="vmap_usa" class="vmaps chart hide"></div>-->
-
-                    <!--<div id="vmap_europe" class="vmaps chart hide"></div>-->
-
-                    <!--<div id="vmap_russia" class="vmaps chart hide"></div>-->
-
-                    <!--<div id="vmap_germany" class="vmaps chart hide"></div>-->
-
-                    <!--</div>-->
-
-                    <!--</div>-->
-
-                    <!--</div>-->
-
-                    <!-- END REGIONAL STATS PORTLET-->
 
                 </div>
 
@@ -1131,27 +801,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                 <div class="span6">
 
-                    <!-- BEGIN PORTLET-->
-
-                    <!--<div class="portlet box blue calendar">-->
-
-                    <!--<div class="portlet-title">-->
-
-                    <!--<div class="caption"><i class="icon-calendar"></i>Calendar</div>-->
-
-                    <!--</div>-->
-                    <!--日程安排-->
-                    <!--<div class="portlet-body light-grey">-->
-
-                    <!--<div id="calendar">-->
-
-                    <!--</div>-->
-
-                    <!--</div>-->
-
-                    <!--</div>-->
-
-                    <!-- END PORTLET-->
 
                 </div>
 
@@ -1187,7 +836,10 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
     <div class="footer-inner">
 
+
+
         福建渃博特自动化设备有限公司
+
 
     </div>
 
@@ -1307,7 +959,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
         Index.initDashboardDaterange();
 
         Index.initIntro();
-
+//alert('环境系统异常！')
 //        TableAdvanced.init();
 
     });
@@ -1315,7 +967,14 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 </script>
 {%endblock script%}
 <!-- END JAVASCRIPTS -->
+<script>
+    $(document).ready(function () {
+//alert(1)
+        $("th").css("text-align", "center")
+        $("td").css("text-align", "center")
 
+    });
+</script>
 <script type="text/javascript">  var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-37564768-1']);
 _gaq.push(['_setDomainName', 'keenthemes.com']);

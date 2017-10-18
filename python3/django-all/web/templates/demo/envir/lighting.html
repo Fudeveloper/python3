@@ -1,27 +1,71 @@
 灯光照明
 {%extends 'demo/base/base_envir.html'%}
 
-{%block title%}灯光照明{%endblock title%}
+
 
 {%block page_name%}灯光照明{%endblock page_name%}
 
+{%block head%}
+<head>
 
+	<meta charset="utf-8" />
+
+	<title>{%block title%}灯光照明{%endblock title%}</title>
+
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+	<meta content="" name="description" />
+
+	<meta content="" name="author" />
+
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+	<link href="/static/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+	<!-- BEGIN PAGE LEVEL STYLES -->
+
+	<link rel="stylesheet" type="text/css" href="/static/css/select2_metro.css" />
+
+	<link rel="stylesheet" href="/static/css/DT_bootstrap.css" />
+
+	<!-- END PAGE LEVEL STYLES -->
+
+	<link rel="shortcut icon" href="/static/image/favicon.ico" />
+
+</head>
+{%endblock head%}
 {%block up_left%}
 <div class="portlet box grey">
 
 							<div class="portlet-title">
 
-								<div class="caption"><i class="icon-user"></i>Table</div>
+								<div class="caption">灯光照明情况</div>
 
 								<div class="actions">
 
-									<a href="#" class="btn blue"><i class="icon-pencil"></i> Add</a>
+									<a href="#" class="btn blue"><i class="icon-pencil"></i> 添加</a>
 
 									<div class="btn-group">
 
 										<a class="btn green" href="#" data-toggle="dropdown">
 
-										<i class="icon-cogs"></i> Tools
+										<i class="icon-cogs"></i> 工具
 
 										<i class="icon-angle-down"></i>
 
@@ -29,11 +73,11 @@
 
 										<ul class="dropdown-menu pull-right">
 
-											<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+											<li><a href="#"><i class="icon-pencil"></i> 编辑</a></li>
 
-											<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+											<li><a href="#"><i class="icon-trash"></i> 删除</a></li>
 
-											<li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+											<li><a href="#"><i class="icon-ban-circle"></i> 禁止</a></li>
 
 											<li class="divider"></li>
 
@@ -57,11 +101,11 @@
 
 											<th style="width:8px;"><input type="checkbox" class="group-checkable" data-set="#sample_2 .checkboxes" /></th>
 
-											<th>Username</th>
+											<th>编号</th>
 
-											<th class="hidden-480">Email</th>
+											<th class="hidden-480">名称</th>
 
-											<th class="hidden-480">Status</th>
+											<th class="hidden-480">状态</th>
 
 										</tr>
 
@@ -69,149 +113,52 @@
 
 									<tbody>
 
-										<tr class="odd gradeX">
 
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>shuxer</td>
-
-											<td class="hidden-480"><a href="mailto:shuxer@gmail.com">shuxer@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-										</tr>
 
 										<tr class="odd gradeX">
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-											<td>looper</td>
+											<td>1</td>
 
-											<td class="hidden-480"><a href="mailto:looper90@gmail.com">looper90@gmail.com</a></td>
+											<td class="hidden-480">灯1</td>
 
-											<td><span class="label label-warning">Suspended</span></td>
+											<td> &nbsp;&nbsp;
 
-										</tr>
+                    <a id="switch" target="_blank" href="{%url 'demo:start_light'%}"
+                       class="label label-danger" onclick="kai();">点击开启</a>
+                    <a style="display: none" id="switch1" target="_blank" href="{%url 'demo:stop_light'%}"
+                      class="label label-success" onclick="guan();">点击关闭</a>
 
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>userwow</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@yahoo.com">userwow@yahoo.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
+                    &nbsp;
 
 										</tr>
 
-										<tr class="odd gradeX">
+										<!--<tr class="odd gradeX">-->
 
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+											<!--<td><input type="checkbox" class="checkboxes" value="1" /></td>-->
 
-											<td>user1wow</td>
+											<!--<td>2</td>-->
 
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
+											<!--<td class="hidden-480">灯2</td>-->
 
-											<td><span class="label label-inverse">Blocked</span></td>
+											<!--<td><span class="label label-block">关闭</span></td>-->
 
-										</tr>
+										<!--</tr>-->
 
-										<tr class="odd gradeX">
+										<!--<tr class="odd gradeX">-->
 
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+											<!--<td><input type="checkbox" class="checkboxes" value="1" /></td>-->
 
-											<td>restest</td>
+											<!--<td>3</td>-->
 
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">test@gmail.com</a></td>
+											<!--<td class="hidden-480">灯3</td>-->
 
-											<td><span class="label label-success">Approved</span></td>
+											<!--<td><span class="label label-block">关闭</span></td>-->
 
-										</tr>
+										<!--</tr>-->
 
-										<tr class="odd gradeX">
 
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>foopl</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>weep</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>coop</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>pppol</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>test</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>userwow</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
-
-											<td><span class="label label-inverse">Blocked</span></td>
-
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>test</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">test@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-										</tr>
 
 									</tbody>
 
@@ -268,15 +215,88 @@
 
 	<script src="/static/js/table-managed.js"></script>
 
-	<script>
+<script>
 
-		jQuery(document).ready(function() {
+    var kai = function () {
+//        alert('kai');
+        $('#switch').attr("style","display: none");
+        $('#switch1').removeAttr("style")
+//        alert('kaijieshu');
+    };
 
-		   App.init();
+    var guan =function () {
+//        alert('guan');
+        $('#switch').removeAttr("style");
+        $('#switch1').attr("style","display: none")
+//        alert('guanjieshu');
+    }
+    var set_switch = function () {
+        if (status == 'true') {
+            kai();
+        }
+        if (status == 'false') {
+            guan();
+        }
 
-		   TableManaged.init();
+    }
 
-		});
+    var GetFreshStatus = function () {
+        {
 
-	</script>
+
+//            alert(1);
+            fresh_air_switch = $('#switch');
+//       status = "false";
+            $.support.cors = true;
+
+            {
+                $.ajax
+                ({
+                    url: "http://192.168.1.120:80/Handler1.ashx",
+                    type: "POST",
+                    dataType: "json",
+                    contentType: 'application/json',
+
+                    data: '{"head": "GetExhaust_FanInfo"}',
+
+                    success: function (d) {
+                        $.each(d.Exhaust_Fan_[0], function (a, b) {
+
+                            if (a == 'Exhaust_Fan1_OnOff') {
+                                status = b;
+//                                alert(b);
+                            }
+                        })
+                        set_switch()
+//                alert(d.Fresh_Air_[0]);
+//                    if (i != 0) {
+//                        setTimeout(set_switch, 1);
+//                    }
+
+
+                    },
+                    error: function (e) {
+                        alert('请检查与主机的连接');
+                    }
+                });
+            }
+
+
+//            alert(1);
+
+        }
+
+    }
+
+    jQuery(document).ready(function () {
+
+        App.init();
+
+        TableManaged.init();
+        GetFreshStatus();
+
+    });
+
+
+</script>
 {%endblock script%}

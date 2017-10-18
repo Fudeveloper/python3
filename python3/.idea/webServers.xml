@@ -10,6 +10,22 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="363184a5-3cf7-4f6b-aba8-f88cd3c013a6" name="tornado" url="http://192.168.17.128">
+        <fileTransfer host="192.168.17.128" port="22" rootFolder="/root/tornado" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="66e002c6-372a-450b-9544-f92fc8aac9a3" name="txy" url="http://123.207.68.28">
+        <fileTransfer host="123.207.68.28" port="22" rootFolder="/root/django_test" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

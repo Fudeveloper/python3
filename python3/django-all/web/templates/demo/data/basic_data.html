@@ -1,0 +1,117 @@
+基础数据设置
+{%extends 'demo/base/base_data.html'%}
+
+{%block title%}基础数据设置{%endblock title%}
+
+{%block page_name%}基础数据设置{%endblock page_name%}
+
+
+{%block up_left%}
+<div class="portlet box yellow">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-coffee"></i></div>
+
+								<div class="tools">
+
+									<a href="javascript:;" class="collapse"></a>
+
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+									<a href="javascript:;" class="reload"></a>
+
+									<a href="javascript:;" class="remove"></a>
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body">
+<div class="clearfix">
+
+                <div class="btn-group">
+
+                    <button id="sample_editable_1_new" class="btn green">
+
+                        添加 <i class="icon-plus"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="btn-group pull-right">
+
+                    <button class="btn dropdown-toggle" data-toggle="dropdown">导出 <i class="icon-angle-down"></i>
+
+                    </button>
+
+                    <ul class="dropdown-menu pull-right">
+
+                        <li><a href="#">打印</a></li>
+
+                        <li><a href="#">保存为PDF</a></li>
+
+                        <li><a href="#">导出Excel</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+								<table class="table table-bordered table-hover">
+
+									<thead>
+
+										<tr>
+
+											<th>工程名</th>
+
+											<th class="hidden-480">单件工时/s</th>
+
+											<th>900套需求工时/h</th>
+
+										</tr>
+
+									</thead>
+
+									<tbody>
+
+										<tr>
+
+											<td>外梁M12螺母点焊</td>
+
+
+											<td class="hidden-480">33</td>
+
+											<td>16.5  </td>
+
+										</tr>
+
+										<tr>
+
+											<td>外梁加强板点焊</td>
+
+											<!--<td>Jacob</td>-->
+
+											<!--<td>Nilson</td>-->
+
+											<td class="hidden-480">53</td>
+
+											<td> 26.5 </td>
+
+										</tr>
+
+
+
+
+
+
+									</tbody>
+
+								</table>
+
+							</div>
+
+						</div>
+{%endblock up_left%}

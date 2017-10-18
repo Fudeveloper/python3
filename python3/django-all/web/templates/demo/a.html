@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>title</title>
+    <meta charset="UTF-8">
+    <script src="../../static/js/jquery-1.10.1.min.js"></script>
+
+    <script>
+        status = "false";
+        $.support.cors = true;
+        $.ajax({
+            url: "http://192.168.1.120:80/Handler1.ashx",
+            type: "POST",
+            dataType: "json",
+            contentType: 'application/json',
+
+            data: '{"head": "GetLamp_StateInfo"}',
+
+            success: function (d) {
+                alert(d);
+                $.each(d.Exhaust_Fan_[0], function (a, b) {
+
+                    if (a == 'GetLamp_StateInfo') {
+                        status = b;
+//                        alert('status='+b)
+                    }
+
+//                    console.log(a,b);
+                })
+//                alert(d.Fresh_Air_[0]);
+
+            },
+            error: function (e) {
+            }
+        });
+
+    </script>
+</head>
+<body>
+测试Ajax跨域问题
+</body>
+</html>

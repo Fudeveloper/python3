@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="lik_virtual">
+  <component name="PublishConfigData" serverName="tornado">
     <serverData>
+      <paths name="Copy of project-level server 'txy'">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="lik">
         <serverdata>
           <mappings>
@@ -30,7 +37,20 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="tornado">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/tornado" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="txy">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
-    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
