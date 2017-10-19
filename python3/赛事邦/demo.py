@@ -9,12 +9,14 @@ from selenium import webdriver
 
 m = PyMouse()
 k = PyKeyboard()
-# ------------------------------------------------ 配置部分 ------------------------------------------------
-# 固定密码
-passwd = "aabbcc123"
+# -----------------------C:\Users\Administrator\Desktop\img\22-0.jpg
+# C:\Users\Administrator\Desktop\img\22-1.jpg
+# ------------------------- 配置部分 ------------------------------------------------
+# 固定密码C:\Users\Administrator\Desktop\img\193-0.jpg
 
+passwd = "aabbcc123"
 # 当前索引
-now_index = 7
+now_index = 189
 
 # 账号
 phone_number = phone.get_phone_by_index(now_index)
@@ -84,19 +86,19 @@ btns_img = driver.find_elements_by_class_name("btn-default")
 # ------------------------------------------------ 上传图片部分 ------------------------------------------------
 # 上传封面
 btns_img[0].click()
-time.sleep(2)
+time.sleep(1.5)
 k.type_string(img1)
-time.sleep(1)
+time.sleep(1.5)
 k.press_key(k.enter_key)
 time.sleep(1)
 
 # 上传参赛作品代表图
 btns_img[2].click()
-time.sleep(1)
+time.sleep(1.5)
 k.type_string(img2)
-time.sleep(1)
+time.sleep(1.5)
 k.press_key(k.enter_key)
-time.sleep(1)
+time.sleep(1.5)
 
 # ------------------------------------------------ 信息填写 ------------------------------------------------
 from selenium.webdriver.support.select import Select
@@ -125,20 +127,20 @@ inputs[9].send_keys(finance.decode('utf-8'))
 inputs[10].send_keys(vision.decode('utf-8'))
 
 # ------------------------------------------------ 添加成员 ------------------------------------------------
-btns_img[6].click()
-time.sleep(2)
-
-x_dim, y_dim = m.screen_size()
-m.click(x_dim / 2, y_dim / 2, 1)
-time.sleep(0.5)
-k.press_key(k.tab_key)
-k.type_string(member_username)
-k.press_key(k.enter_key)
-
-time.sleep(3)
+# btns_img[6].click()
+# time.sleep(2)
+#
+# x_dim, y_dim = m.screen_size()
+# m.click(x_dim / 2, y_dim / 2, 1)
+# time.sleep(0.5)
+# k.press_key(k.tab_key)
+# k.type_string(member_username)
+# k.press_key(k.enter_key)
+#
+# time.sleep(3)
 # ------------------------------------------------ 提交 ------------------------------------------------
 driver.find_element_by_id("release-btn").click()
-time.sleep(3)
+time.sleep(2)
 for i in range(10):
     m.click(808 - 200 + 50, 585 - 110, 1)
 with open('complete.txt', 'a') as f:

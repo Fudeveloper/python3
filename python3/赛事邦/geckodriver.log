@@ -1,50 +1,42 @@
-1508320861138	geckodriver	INFO	geckodriver 0.19.0
-1508320861146	geckodriver	INFO	Listening on 127.0.0.1:52102
-1508320863239	mozrunner::runner	INFO	Running command: "D:\\firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.iZE6fOKevAgp"
-1508320863482	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///D:/firefox/omni.ja!/components/addonManager.js:65
-1508320864090	Marionette	INFO	Enabled via --marionette
-[Child 46604] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1508320866796	Marionette	INFO	Listening on port 52112
-1508320866869	Marionette	WARN	TLS certificate errors will be ignored for this session
-1508320866903	Marionette	DEBUG	Register listener.js for window 6442450945
-1508320866935	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1508320867020	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1508320867020	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1508320867551	addons.productaddons	ERROR	Request failed certificate checks: [Exception... "Certificate checks failed. See previous errors for details."  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/CertUtils.jsm :: validateCert :: line 113"  data: no]
-1508320882093	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.cezone.cn/m/login"
-1508320882101	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.cezone.cn/m/login"
-1508320882246	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.cezone.cn/m/login"
-1508320882749	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.cezone.cn/m/login"
-1508320882750	Marionette	DEBUG	Received DOM event "unload" for "http://www.cezone.cn/m/login"
-1508320889063	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
-1508320889077	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
-1508320890094	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
-1508320891491	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
-1508320891491	Marionette	DEBUG	Received DOM event "unload" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
-1508320891955	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.cezone.cn/m/sign_up/add/8231d6ad85f94b6a8363dba93be73200"
-1508320891977	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.cezone.cn/m/sign_up/add/8231d6ad85f94b6a8363dba93be73200"
-1508320894233	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1508320898610	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1508320902011	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1508320902579	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1508320908343	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-JavaScript error: http://www.cezone.cn/assets/js/bootstrap.min.js, line 6: TypeError: a.$element is null
-NG: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1508406132676	geckodriver	INFO	geckodriver 0.19.0
+1508406132676	geckodriver	INFO	Listening on 127.0.0.1:55808
+1508406134754	mozrunner::runner	INFO	Running command: "D:\\firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.gAxEmR7MNH5D"
+1508406134982	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///D:/firefox/omni.ja!/components/addonManager.js:65
+1508406135547	Marionette	INFO	Enabled via --marionette
+[Child 40284] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1508406138001	Marionette	INFO	Listening on port 55818
+1508406138485	Marionette	WARN	TLS certificate errors will be ignored for this session
+1508406138549	Marionette	DEBUG	Register listener.js for window 4294967297
+1508406138574	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1508406138632	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1508406138633	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1508406146902	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.cezone.cn/m/login"
+1508406146906	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.cezone.cn/m/login"
+1508406147028	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.cezone.cn/m/login"
+1508406147527	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.cezone.cn/m/login"
+1508406147528	Marionette	DEBUG	Received DOM event "unload" for "http://www.cezone.cn/m/login"
+1508406151387	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
+1508406151394	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
+1508406152411	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
+1508406152638	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
+1508406152638	Marionette	DEBUG	Received DOM event "unload" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
+1508406152836	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.cezone.cn/m/sign_up/my_match_index?cv=redirect%3A%2Fm%2Fsign_up%2Fmy_match_index"
+1508406152847	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.cezone.cn/m/sign_up/my_match_index?cv=redirect%3A%2Fm%2Fsign_up%2Fmy_match_index"
+1508406155153	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+[Parent 15112] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14920] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14920] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-elemetry_modules_ping
-[GPU 46356] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+.cc, line 346
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-cc, line 346
-
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
-r: cannot send/recv
-
- WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+e 346
+1508405269303	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
@@ -52,53 +44,43 @@ ion for id: telemetry_modules_ping
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-.js, line 812: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
 
-###!!! [Child][MessageChannel] Error: (msgtype=0x150028,name=PBrowser::Msg_EnableDisableCommands) Closed channel: cannot send/recv
+error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-###!!! [Child][MessageChannel] Error: (msgtype=0x15002B,name=PBrowser::Msg_SetInputContext) Closed channel: cannot send/recv
+C TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 32496] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+BUG	Received DOM event "DOMContentLoaded" for "http://www.cezone.cn/m/index?cv=redirect%3A%2Fm%2Findex"
+1508396628633	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.cezone.cn/m/sign_up/my_match_index"
+JavaScript error: http://www.cezone.cn/assets/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: http://www.cezone.cn/assets/js/plugin/jqgrid/5.1.0/jquery.jqGrid.min.js, line 9: ReferenceError: jQuery is not defined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/jqgrid/5.1.0/grid.locale-cn.js, line 20: ReferenceError: jQuery is not defined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/validation/1.15.0/jquery.validate.min.js, line 4: ReferenceError: jQuery is not defined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/validation/1.15.0/jquery-validate.bootstrap-tooltip.min.js, line 11: ReferenceError: jQuery is not defined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/validation/1.15.0/messages_zh.js, line 7: ReferenceError: jQuery is not defined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/layer/3.0.1/layer.js, line 2: TypeError: i is not a function
+JavaScript error: http://www.cezone.cn/assets/js/plugin/select2/4.0.3/select2.full.min.js, line 1: ReferenceError: jQuery is not defined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/select2/4.0.3/zh-CN.js, line 3: ReferenceError: jQuery is not defined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/bootstrap-datetimepicker/1.0.0/bootstrap-datetimepicker.js, line 34: ReferenceError: jQuery is not defined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/bootstrap-datetimepicker/1.0.0/bootstrap-datetimepicker.zh-CN.js, line 16: ReferenceError: jQuery is not defined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/tagsinput/0.8.0/bootstrap-tagsinput.min.js, line 6: TypeError: a is undefined
+JavaScript error: http://www.cezone.cn/assets/js/plugin/serialize/2.5.0/jquery.serialize-object.min.js, line 8: TypeError: i is undefined
+JavaScript error: http://www.cezone.cn/assets/js/common.js?20170519, line 1: ReferenceError: $ is not defined
+JavaScript error: http://www.cezone.cn/m/sign_up/my_match_index, line 169: ReferenceError: $ is not defined
+JavaScript error: http://www.cezone.cn/m/sign_up/my_match_index, line 176: ReferenceError: $ is not defined
+1508396628663	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.cezone.cn/m/sign_up/my_match_index"
+1508396630083	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450945"
+[Child 16388] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16388] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 
-JavaScript error: chrome://global/content/browser-child.js, line 125: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+1508396631101	geckodriver::marionette	ERROR	Failed to kill browser process
 
-JavaScript error: chrome://global/content/browser-child.js, line 125: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x15002B,name=PBrowser::Msg_SetInputContext) Closed channel: cannot send/recv
-
-
-
-###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x150015,name=PBrowser::Msg_NotifyIMEFocus) Closed channel: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x15002B,name=PBrowser::Msg_SetInputContext) Closed channel: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
-
-JavaScript error: chrome://global/content/browser-child.js, line 125: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x15002B,name=PBrowser::Msg_SetInputContext) Closed channel: cannot send/recv
-
-e/common/ipc_channel_win.cc, line 346
-[Child 46236] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-console.error: 
-  Message: Error: Source map at http://www.cezone.cn/assets/css/bootstrap.min.css.map not found or invalid
-  Stack:
-    _fetchSourceMap/</map<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/stylesheets.js:573:27
-process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
-walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
-scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
-
-_fetchSourceMap/</map<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/stylesheets.js:573:27
-process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
-walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
-scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
-console.error: 
   Protocol error (unknownError): Source map at http://www.cezone.cn/assets/css/bootstrap.min.css.map not found or invalid
 console.error: 
   Message: Error: Source map at http://www.cezone.cn/assets/css/bootstrap.min.css.map not found or invalid
