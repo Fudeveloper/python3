@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="tornado">
+  <component name="PublishConfigData" autoUpload="Always" serverName="lik_virtual">
     <serverData>
       <paths name="Copy of project-level server 'txy'">
         <serverdata>
@@ -33,7 +33,7 @@
       <paths name="tencent_virtual">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/1-django" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/django-all/web" web="/" />
           </mappings>
         </serverdata>
       </paths>
@@ -52,5 +52,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

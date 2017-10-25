@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
-
-
+{% load cache %}
 <!--[if IE 8]>
 <html lang="zh-cmn-Hans" class="ie8 no-js"><![endif]-->
 
@@ -59,6 +59,7 @@
     <!-- END PAGE LEVEL STYLES -->
 
     <link rel="shortcut icon" href="/static/image/favicon.ico"/>
+    <!--<script src="/static/js/dc.js"></script>-->
 
 </head>
 {%endblock head%}
@@ -832,6 +833,10 @@
 
 <!-- BEGIN FOOTER -->
 
+{% cache 600 hello %}
+<!--hello1-->
+
+
 <div class="footer">
 
     <div class="footer-inner">
@@ -854,7 +859,7 @@
     </div>
 
 </div>
-
+{% endcache %}
 <!-- END FOOTER -->
 
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
@@ -984,7 +989,7 @@ _gaq.push(['_trackPageview']);
     var ga = document.createElement('script');
     ga.type = 'text/javascript';
     ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    ga.src = "/static/js/dc.js";
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(ga, s);
 })();</script>

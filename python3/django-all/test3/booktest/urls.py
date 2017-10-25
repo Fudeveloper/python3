@@ -1,5 +1,7 @@
 from django.conf.urls import url
+
 from booktest import views
+
 urlpatterns = [
     url(r'^index/$', views.index, name='index'),
     url(r'^upload_pic/$', views.upload_pic, name='upload_pic'),

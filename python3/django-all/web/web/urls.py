@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 import demo.urls
-
+from django.conf.urls.static import static
+from django.conf import settings
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include(demo.urls, namespace='demo')),
 
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+

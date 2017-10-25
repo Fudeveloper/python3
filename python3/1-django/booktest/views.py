@@ -2,7 +2,6 @@ from django.shortcuts import render
 # from django.http import *
 # from django.http import response
 # from django.template import RequestContext,loader\
-from booktest.models import *
 # Create your views here.
 
 

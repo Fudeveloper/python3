@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../django-all/bootstrap/.idea/bootstrap.iml" filepath="$PROJECT_DIR$/../django-all/bootstrap/.idea/bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/django-all/jquery_learning/.idea/jquery_learning.iml" filepath="$PROJECT_DIR$/django-all/jquery_learning/.idea/jquery_learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python3.iml" filepath="$PROJECT_DIR$/.idea/python3.iml" />
     </modules>
   </component>

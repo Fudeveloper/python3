@@ -1,5 +1,7 @@
 from django.conf.urls import url
+
 from booktest import views
+
 urlpatterns = [
    url(r'^$', views.index, name='index'),
    url(r'^show_test', views.show_test, name='show_test'),

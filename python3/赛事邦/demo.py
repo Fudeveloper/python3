@@ -16,7 +16,7 @@ k = PyKeyboard()
 
 passwd = "aabbcc123"
 # 当前索引
-now_index = 189
+now_index = 0
 
 # 账号
 phone_number = phone.get_phone_by_index(now_index)

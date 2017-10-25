@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-import test2.views
-import booktest.view_login
+
+import booktest
+
 urlpatterns = [
     url(r'^$', booktest.view_login.index),
     url(r'^admin/', include(admin.site.urls)),

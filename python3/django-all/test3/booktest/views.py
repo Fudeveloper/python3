@@ -1,9 +1,9 @@
 import os
-import json
-from django.shortcuts import render
-from django.http import HttpResponse ,JsonResponse
-from booktest.models import *
+
 from django.core.paginator import *
+from django.http import HttpResponse, JsonResponse
+from django.shortcuts import render
+
 
 # Create your views here.
 def index(request):

@@ -1,6 +1,7 @@
 from django.shortcuts import render
+
 from booktest.models import HeroInfo
-from django.http import HttpResponse
+
 
 def index(requset):
     hero_list = HeroInfo.objects.all()

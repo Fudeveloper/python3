@@ -7,9 +7,16 @@
       <sourceFolder url="file://$MODULE_DIR$/django-all" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/django-all/web" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/赛事邦" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/douyu" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django-all/django-cms-release-3.4.x" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django-all/django-react-blog-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django-all/forum-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django-all/dailyfree" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 2.7.13 (C:\python2\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.5.2 (sftp://root@192.168.17.134:22/root/.virtualenvs/test1/bin/python3.5)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="jquery_learning" />
+    <orderEntry type="module" module-name="bootstrap" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

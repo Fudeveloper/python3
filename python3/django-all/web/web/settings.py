@@ -35,7 +35,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'demo'
+    'demo',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -97,10 +97,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = '/var/www/test/static/'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
-
 
 # 需要先设置POP3/SMTP服务
 # 主机
@@ -115,3 +116,11 @@ EMAIL_HOST_PASSWORD = "wo951127"
 EMAIL_USE_TLS = False
 # 发件人
 EMAIL_FROM = "awo951127"
+
+# 缓存
+CACHES={
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'TIMEOUT': 60,
+    }
+}
